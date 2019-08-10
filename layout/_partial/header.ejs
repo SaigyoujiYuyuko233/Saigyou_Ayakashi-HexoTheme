@@ -5,9 +5,9 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span><%= __('count.articles') %></span><%= site.posts.length %></div>
-        <div><span><%= __('count.tags') %></span><%= site.tags.length %></div>
-        <div><span><%= __('count.categories') %></span><%= site.categories.length %></div>
+        <div><span><%= __('文章') %></span><%= site.posts.length %></div>
+        <div><span><%= __('标签') %></span><%= site.tags.length %></div>
+        <div><span><%= __('分类') %></span><%= site.categories.length %></div>
     </div>
     <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         <% for (name in theme.menu) { %>
