@@ -242,8 +242,7 @@ body {
         }
     }
     .nexmoe-primary {
-        box-shadow: 0 0 1rem rgba(161,177,204,0.4);
-        background-color: #fff;
+
         float: left;
         width: 100%;
         padding: 20px;
@@ -278,12 +277,20 @@ body {
         }
     }
     .nexmoe-posts {
+
         position relative
         .nexmoe-post {
+
+            box-shadow: 0 0 1rem rgba(161,177,204,0.4);
+            background-color: #fff;
+            border-radius: 10px;
+
             width: 100%;
             margin-bottom: 40px;
             article {
-                padding: 10px 0;
+                padding: 10px 12px;
+
+
             }
             article p:first-child {
                 margin-top: 0;
@@ -297,11 +304,15 @@ body {
         }
     }
     .nexmoe-post {
+
             .nexmoe-post-cover {
                 width: 100%;
+
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+
                 position: relative;
                 overflow: hidden;
-                border-radius: 10px;
                 margin-bottom: 10px;
                 max-height: 500px;
                 min-height: 65px;
@@ -343,6 +354,9 @@ body {
             }
             .nexmoe-post-meta {
                 margin-bottom: -10px;
+
+                padding-left 12px;
+
                 a {
                     border-radius: 10px;
                     padding:5px 10px;
@@ -469,7 +483,7 @@ body {
             margin-bottom: 0;
         }
         .mdui-list {
-            margin-left: 160px;    
+            margin-left: 160px;
         }
         .nexmoe-list-item  {
             padding: 0 17px;
@@ -536,7 +550,7 @@ article pre::after {
     box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
 }
 article pre code {
-    position: relative; 
+    position: relative;
     padding: 0 5px;
     display: inline-block;
     padding-left: 45px!important;
