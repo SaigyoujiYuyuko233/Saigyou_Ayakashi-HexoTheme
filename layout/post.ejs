@@ -1,5 +1,6 @@
 <div class="nexmoe-post">
-    <div class="nexmoe-post-cover"> 
+
+    <div class="nexmoe-post-cover">
         <% if (page.cover){ %>
         <img src="<%- page.cover %>">
         <%}  else{ %>
@@ -7,32 +8,40 @@
         <% } %>
         <h1><%= page.title %></h1>
     </div>
-  <div class="nexmoe-post-meta">
-    <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
-    <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
-    <% if (page.categories && page.categories.length){ %>
-      <%- list_categories(page.categories, {
-        show_count: false,
-        class: 'nexmoefont icon-appstore-fill ',
-        style: 'none',
-        separator: ''
-      }) %>
-    <% } %>
-    <% if (page.tags && page.tags.length){ %>
-      <%- list_tags(page.tags, {
-        show_count: false,
-        class: 'nexmoefont icon-tag-fill ',
-        style: 'none',
-        separator: ' '
-      }) %>
-    <% } %>
-  </div>
-  <article>
-    <%- page.content %>
-  </article>
+
+    <div class="uuz-post-payload">
+
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
+            <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
+            <% if (page.categories && page.categories.length){ %>
+                <%- list_categories(page.categories, {
+                    show_count: false,
+                    class: 'nexmoefont icon-appstore-fill ',
+                    style: 'none',
+                    separator: ''
+                }) %>
+            <% } %>
+            <% if (page.tags && page.tags.length){ %>
+                <%- list_tags(page.tags, {
+                    show_count: false,
+                    class: 'nexmoefont icon-tag-fill ',
+                    style: 'none',
+                    separator: ' '
+                }) %>
+            <% } %>
+        </div>
+        <article>
+            <%- page.content %>
+        </article>
+
+    </div>
+
+
   <% if (!page.reprint){ %>
     <%- partial('_partial/copyright') %>
   <% } %>
   <%- partial('_partial/comment') %>
+
 </div>
