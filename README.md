@@ -4,7 +4,7 @@
 
 <h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a></h1>
 
-> 一个比较特别的 Hexo 主题
+> 根据 nexmoe/hexo-theme-nexmoe 修改的东方Project主题
 
 <p align="center">
 <img alt="star" src="https://img.shields.io/github/stars/nexmoe/hexo-theme-nexmoe.svg"/>
@@ -17,15 +17,12 @@
 <img alt="Download" src="https://img.shields.io/badge/download-29.9KB-brightgreen.svg"/>
 </p>
 
-## 教程
-请查看 [https://docs.nexmoe.com/](https://docs.nexmoe.com/)
-
 ## 演示
 
 - [Nexmoe](https://nexmoe.com/)
 - [深海小涛](https://www.xtaolink.cn/)
 - [西瓜星 🍉✨](https://suikastar.com/)
-
+- [幽幽子の厨房](https://blog.uuzdream.cn/)
 欢迎将你的网站提交到这里来
 
 ## 国际化
@@ -41,28 +38,3 @@
 <a href="https://github.com/nexmoe/hexo-theme-nexmoe/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/nexmoe/hexo-theme-nexmoe.svg"/></a>
 
 根据 Apache License 2.0 许可证开源。
-
-## 后续更新
-就读高中，
-star 以及 issue 是我更新的动力!
-欢迎加群 [482634342 轻惋漫社](https://jq.qq.com/?_wv=1027&k=5CfKHun) 划水
-
-## 交流
-论坛：https://club.chainwon.com/t/nexmoe
-
-## 评论支持
-- [GitTalk](https://github.com/gitalk/gitalk)
-- [Gitment](https://github.com/imsun/gitment)
-- [Valine](https://valine.js.org/)
-- Disqusjs
-- DISQUS
-- 搜狐畅言 
-- 来必力
-
-
-如果以上没有满足你的评论框，可以在本主题目录 `layout/_partial/_comment` 新建一个文件 `xxx.ejs`，然后在该文件中安装你需要的评论框系统代码。
-如果有空的话，你还可以使用 `pull request` 功能PR到本项目的 Github 仓库
-
-
-## 更多
-请查看 [这里](https://nexmoe.com/hexo-theme-nexmoe.html)
