@@ -2,11 +2,12 @@
 <div class="nexmoe-post-copyright">
 <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
 <strong><%- __('copyright.author') %>：</strong><%= config.author %><br>
-<strong><%- __('copyright.permalink') %>：</strong><%- link_to(page.permalink, page.permalink, {external: true}) %><br>
+    <strong><%- __('copyright.permalink') %>：</strong><%- link_to(page.permalink, page.permalink, {external: true}) %><br>
 <% if (page.copyright) { %>
   <%- page.copyright %>
 <% } else { %>
   <%- theme.copyright %>
 <% } %>
+    <p class="mdui-text-color-red-a400" style="margin-bottom: 0;">转载请附原文链接</p>
 </div>
 <% } %>
