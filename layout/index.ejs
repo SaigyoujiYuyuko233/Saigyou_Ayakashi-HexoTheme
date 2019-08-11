@@ -1,6 +1,8 @@
 <section class="nexmoe-posts" id="brand-waterfall">
     <% page.posts.each(function (page) { %>
+
     <div class="nexmoe-post">
+
         <a href="<%- url_for(page.path) %>">
             <div class="nexmoe-post-cover mdui-ripple"> 
                 <% if (page.cover){ %>
@@ -11,35 +13,56 @@
                 <h1><%= page.title %></h1>
             </div>
         </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
-            <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
-            <% if (page.categories && page.categories.length){ %>
-                <%- list_categories(page.categories, {
-                    show_count: false,
-                    class: 'nexmoefont icon-appstore-fill ',
-                    style: 'none',
-                    separator: ''
-                }) %>
-            <% } %>
-            <% if (page.tags && page.tags.length){ %>
-                <%- list_tags(page.tags, {
-                    show_count: false,
-                    class: 'nexmoefont icon-tag-fill ',
-                    style: 'none',
-                    separator: ' '
-                }) %>
-            <% } %>
+
+        <div class="uuz-post-payload">
+
+            <div class="nexmoe-post-meta">
+                <a><i class="nexmoefont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
+                <a><i class="nexmoefont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
+                <a><i class="nexmoefont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
+                <% if (page.categories && page.categories.length){ %>
+                    <%- list_categories(page.categories, {
+                        show_count: false,
+                        class: 'nexmoefont icon-appstore-fill ',
+                        style: 'none',
+                        separator: ''
+                    }) %>
+                <% } %>
+                <% if (page.tags && page.tags.length){ %>
+                    <%- list_tags(page.tags, {
+                        show_count: false,
+                        class: 'nexmoefont icon-tag-fill ',
+                        style: 'none',
+                        separator: ' '
+                    }) %>
+                <% } %>
+            </div>
+
+            <article>
+                <% if(page.excerpt) {%>
+                    <%- page.excerpt %>
+                <%}  else{ %>
+                    <%- page.content %>
+                <% } %>
+            </article>
+
         </div>
-        <article>
-            <% if(page.excerpt) {%>
-            <%- page.excerpt %>
-            <%}  else{ %>
-            <%- page.content %>
-            <% } %>
-        </article>
+
+       <div class="uuz-read-more">
+
+           <div class="cover">
+           </div>
+
+           <a class="active nexmoe-list-item mdui-list-item mdui-ripple mdui-valign" href="<%- url_for(page.path) %>">
+               <i class="mdui-icon material-icons" style="padding-right: 10px;">&#xe5cc;</i>
+               <div class="mdui-list-item-content">
+                   进来看看~
+               </div>
+           </a>
+       </div>
+
     </div>
     <% }) %>
 </section>
+
 <%- partial('_partial/paginator') %>
