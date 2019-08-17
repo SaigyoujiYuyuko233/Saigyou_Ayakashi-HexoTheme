@@ -12,7 +12,7 @@
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme?style=flat-square">
 </p>
 
-<h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Saigyou-Ayakashi [西行妖]</a></h1>
+<h1 align="center"><a href="https://blog.uuzdream.cn/" target="_blank">Saigyou-Ayakashi [西行妖]</a></h1>
 
 > 根据 nexmoe/hexo-theme-nexmoe 修改的东方Project主题
 
