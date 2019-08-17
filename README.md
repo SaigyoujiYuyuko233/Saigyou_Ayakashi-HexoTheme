@@ -1,7 +1,7 @@
 <div align="right">Language: <a title="English" href="https://github.com/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme/blob/master/README/english.md">English</a> | Chinese </div>
 
 ![预览图](cover.png)   
-
+<p>
 <img alt="GitHub" src="https://img.shields.io/badge/Author-SaigyoujiYuyuko233-brightgreen?style=flat-square">
 <img alt="GitHub" src="https://img.shields.io/badge/Origin-nexmoe-orange?style=flat-square">
 <img alt="GitHub" src="https://img.shields.io/github/license/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme?style=flat-square">
@@ -10,7 +10,7 @@
 <img alt="GitHub release" src="https://img.shields.io/github/release/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme?style=flat-square">
 <img alt="GitHub issues" src="https://img.shields.io/github/issues/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme?style=flat-square">
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/w/SaigyoujiYuyuko233/Saigyou_Ayakashi-HexoTheme?style=flat-square">
-
+</p>
 
 <h1 align="center"><a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Saigyou-Ayakashi [西行妖]</a></h1>
 
