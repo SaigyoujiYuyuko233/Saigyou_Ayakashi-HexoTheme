@@ -13,3 +13,40 @@
 
 <%- js_auto_version('js/app') %>
 <script src="<%- theme.cdn.lazysizes.js %>"></script>
+
+<script>
+    // sidebar 跟随滚动条
+
+    $(function(){
+        $(window).scroll(function(){
+            let yy = $(this).scrollTop();//获得滚动条top值
+            let already = false;
+
+            //console.log($(this).scrollTop() + " | " + (Math.round((yy/10).toFixed(0))*10%300));
+            if (Math.round((yy/10).toFixed(0))*10%300 === 0 && $(this).scrollTop() >= 400 && already === false) {
+                $("#drawer").css({"top": yy + 10});
+                already = true;
+
+                setTimeout(function () {
+                    already = false;
+                },3000);
+            }else{
+                $("#drawer").css({"position":"absolute"});
+            }
+
+            // 顶部自动置顶
+            if (yy <= 10){
+                already = false;
+                $("#drawer").css({"top": 0});
+            }
+
+            // 底部自动置底
+            if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+                $("#drawer").css({"top": $(document).scrollTop() - 300});
+                already = false;
+            }
+
+        });
+
+    });
+</script>
