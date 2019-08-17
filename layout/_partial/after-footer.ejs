@@ -24,6 +24,13 @@
 
             //console.log($(this).scrollTop() + " | " + (Math.round((yy/10).toFixed(0))*10%300));
             if (Math.round((yy/10).toFixed(0))*10%300 === 0 && $(this).scrollTop() >= 400 && already === false) {
+
+                // 如果将要置底
+                if (yy + 10 >= $(document).scrollTop()){
+                    $("#drawer").css({"top": $(document).scrollTop() - 300});
+                    return;
+                }
+
                 $("#drawer").css({"top": yy + 10});
                 already = true;
 
