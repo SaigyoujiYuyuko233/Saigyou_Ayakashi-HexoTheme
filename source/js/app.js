@@ -26,13 +26,13 @@ mdui.mutation();
 $(window).scroll(function(){
   let yy = $(this).scrollTop();//获得滚动条top值
   let already = false;
-
-  //console.log($(this).scrollTop() + " | " + (Math.round((yy/10).toFixed(0))*10%300));
+  
   if (Math.round((yy/10).toFixed(0))*10%300 === 0 && $(this).scrollTop() >= 400 && already === false) {
 
     // 如果将要置底
-    if (yy + 10 >= $(document).scrollTop()){
+    if (yy + 40 >= ($(document).height() - $(window).height())){
       $("#drawer").css({"top": $(document).scrollTop() - 300});
+      console.log("qaq");
       return;
     }
 
