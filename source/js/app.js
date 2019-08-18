@@ -30,7 +30,6 @@ $(window).scroll(function(){
   // 如果将要置底
   if ($(this).scrollTop() + 40 >= ($(document).height() - $(window).height())){
     $("#drawer").css({"top": $(document).scrollTop() - 360});
-    console.log("qaq");
     return;
   }
 
