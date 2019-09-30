@@ -41,7 +41,7 @@ let scroll_hight_provous = 0;
 document.onscroll = function (){
   let scroll_hight_now = document.body.scrollTop + document.documentElement.scrollTop;
 
-  console.log("pvs: " + scroll_hight_provous + " ||| now: " + scroll_hight_now)
+  //console.log("pvs: " + scroll_hight_provous + " ||| now: " + scroll_hight_now)
 
   // 自动往下
   if (scroll_hight_now > scroll_hight_provous && scroll_hight_now > $(".nexmoe-primary")[0].scrollHeight*0.2){
